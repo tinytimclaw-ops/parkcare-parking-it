@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Parcheggio Aeroporto | ParkCare Italia</title>
+  <meta name="description" content="Prenota il parcheggio aeroportuale in Italia. Miglior prezzo garantito. Confronta e risparmia fino al 70%.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parcheggio Aeroporto | ParkCare Italia">
+  <meta property="og:description" content="Prenota il parcheggio aeroportuale in Italia. Miglior prezzo garantito.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header style="background-color: #37b4a9; padding: 16px 24px;">
+    <div class="container">
+      <img src="https://parkcare.fr/assets/images/logos/parkcare/logo_uk.svg"
+           alt="ParkCare"
+           height="50"
+           style="min-height: 50px;">
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Parcheggio Aeroporto in Italia</h1>
+      <p class="hero-subtitle">Confronta e risparmia fino al 70% sul parcheggio aeroportuale</p>
+    </div>
+  </section>
+
+  <!-- Wizard Section -->
+  <section class="wizard-section">
+    <div class="container">
+      <div class="wizard-card">
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+          <div class="progress-step active" data-step="1">
+            <div class="progress-circle">1</div>
+            <span class="progress-label">Aeroporto</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="2">
+            <div class="progress-circle">2</div>
+            <span class="progress-label">Date</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="3">
+            <div class="progress-circle">3</div>
+            <span class="progress-label">Orari</span>
+          </div>
+        </div>
+
+        <form id="wizardForm" class="wizard-form">
+          <!-- Step 1: Airport -->
+          <div class="wizard-step active" data-step="1">
+            <h2 class="step-title">Seleziona l'aeroporto</h2>
+            <p class="step-subtitle">Dove lascerai la tua auto?</p>
+
+            <div class="airport-grid">
+              <label class="airport-card">
+                <input type="radio" name="depart" value="FCO" required>
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Roma Fiumicino</h3>
+                  <p class="airport-code">FCO</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="CIA">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Roma Ciampino</h3>
+                  <p class="airport-code">CIA</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="MXP">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Milano Malpensa</h3>
+                  <p class="airport-code">MXP</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="LIN">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Milano Linate</h3>
+                  <p class="airport-code">LIN</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="BGY">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Bergamo Orio al Serio</h3>
+                  <p class="airport-code">BGY</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="VCE">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Venezia Marco Polo</h3>
+                  <p class="airport-code">VCE</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="NAP">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Napoli Capodichino</h3>
+                  <p class="airport-code">NAP</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="BLQ">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Bologna Marconi</h3>
+                  <p class="airport-code">BLQ</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="PSA">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Pisa Galilei</h3>
+                  <p class="airport-code">PSA</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="CTA">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Catania Fontanarossa</h3>
+                  <p class="airport-code">CTA</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="PMO">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Palermo Falcone-Borsellino</h3>
+                  <p class="airport-code">PMO</p>
+                </div>
+              </label>
+
+              <label class="airport-card">
+                <input type="radio" name="depart" value="BRI">
+                <div class="airport-card-content">
+                  <div class="airport-icon">✈️</div>
+                  <h3>Bari Palese</h3>
+                  <p class="airport-code">BRI</p>
+                </div>
+              </label>
+            </div>
+
+            <button type="button" class="btn-primary btn-large btn-next" disabled>
+              Continua
+            </button>
+          </div>
+
+          <!-- Step 2: Dates -->
+          <div class="wizard-step" data-step="2">
+            <h2 class="step-title">Seleziona le date</h2>
+            <p class="step-subtitle">Quando lascerai e ritirerai la tua auto?</p>
+
+            <div class="date-inputs">
+              <div class="form-group">
+                <label class="form-label" for="outDate">
+                  <span class="label-icon">📅</span>
+                  Data di arrivo
+                </label>
+                <input type="date" id="outDate" name="outDate" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inDate">
+                  <span class="label-icon">📅</span>
+                  Data di partenza
+                </label>
+                <input type="date" id="inDate" name="inDate" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="wizard-actions">
+              <button type="button" class="btn-secondary btn-back">
+                ← Indietro
+              </button>
+              <button type="button" class="btn-primary btn-next">
+                Continua
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Times -->
+          <div class="wizard-step" data-step="3">
+            <h2 class="step-title">Seleziona gli orari</h2>
+            <p class="step-subtitle">A che ora arriverai e partirai?</p>
+
+            <div class="time-inputs">
+              <div class="form-group">
+                <label class="form-label" for="outTime">
+                  <span class="label-icon">🕐</span>
+                  Ora di arrivo
+                </label>
+                <select id="outTime" name="outTime" class="form-control" required>
+                  <option value="00:00">00:00</option>
+                  <option value="01:00">01:00</option>
+                  <option value="02:00">02:00</option>
+                  <option value="03:00">03:00</option>
+                  <option value="04:00">04:00</option>
+                  <option value="05:00">05:00</option>
+                  <option value="06:00" selected>06:00</option>
+                  <option value="07:00">07:00</option>
+                  <option value="08:00">08:00</option>
+                  <option value="09:00">09:00</option>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="19:00">19:00</option>
+                  <option value="20:00">20:00</option>
+                  <option value="21:00">21:00</option>
+                  <option value="22:00">22:00</option>
+                  <option value="23:00">23:00</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inTime">
+                  <span class="label-icon">🕐</span>
+                  Ora di partenza
+                </label>
+                <select id="inTime" name="inTime" class="form-control" required>
+                  <option value="00:00">00:00</option>
+                  <option value="01:00">01:00</option>
+                  <option value="02:00">02:00</option>
+                  <option value="03:00">03:00</option>
+                  <option value="04:00">04:00</option>
+                  <option value="05:00">05:00</option>
+                  <option value="06:00">06:00</option>
+                  <option value="07:00">07:00</option>
+                  <option value="08:00">08:00</option>
+                  <option value="09:00">09:00</option>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00" selected>12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="19:00">19:00</option>
+                  <option value="20:00">20:00</option>
+                  <option value="21:00">21:00</option>
+                  <option value="22:00">22:00</option>
+                  <option value="23:00">23:00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="wizard-actions">
+              <button type="button" class="btn-secondary btn-back">
+                ← Indietro
+              </button>
+              <button type="submit" class="btn-primary btn-submit">
+                Cerca parcheggio →
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- USPs Section -->
+  <section class="usps-section">
+    <div class="container">
+      <div class="usps-grid">
+        <div class="usp-card">
+          <div class="usp-icon">✓</div>
+          <h3>Miglior prezzo garantito</h3>
+          <p>Confronta tutte le opzioni e risparmia fino al 70%</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon">★</div>
+          <h3>Valutazione 4.4/5</h3>
+          <p>Migliaia di recensioni verificate su Trustpilot</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon">🔒</div>
+          <h3>Pagamento sicuro</h3>
+          <p>Protezione completa dei dati e pagamento crittografato</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon">📍</div>
+          <h3>Strutture monitorate</h3>
+          <p>Parcheggi sicuri e sorvegliati 24/7</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon">🚗</div>
+          <h3>Prenotazione flessibile</h3>
+          <p>Modifiche gratuite fino a 24 ore prima</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon">💬</div>
+          <h3>Assistenza clienti</h3>
+          <p>Supporto in italiano disponibile 7 giorni su 7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ParkCare. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+</body>
+</html>
