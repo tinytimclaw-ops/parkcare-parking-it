@@ -219,9 +219,7 @@ body {
 }
 
 .airport-code {
-  font-size: 12px;
-  color: #666666;
-  font-weight: 500;
+  display: none;
 }
 
 /* Date & Time Inputs */
